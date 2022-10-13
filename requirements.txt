@@ -1,0 +1,8 @@
+pandas
+numpy
+pymongo
+scikit_learn
+gunicorn
+Flask==2.1.0
+xgboost
+pymongo[srv]
