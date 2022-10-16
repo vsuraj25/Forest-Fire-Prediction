@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Algerian Forest Fire Prediction</title>
+    <link href='static\css\home.css' rel="stylesheet">
+    </style>
+  </head>
+  <body>
+    <a href="{{ url_for('render_predict_fwi')}}" class="button">Predict Forest Weather Index</a>
+    <a href="{{ url_for('render_predict_forest_fire')}}" class="button">Predict Forest FIre Possibility</a>
+    <a href="{{ url_for('render_bulk_predict')}}" class="button">Bulk Prediction - CSV File</a>
+  </body>
+</html>

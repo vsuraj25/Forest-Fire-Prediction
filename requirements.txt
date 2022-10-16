@@ -5,4 +5,8 @@ scikit_learn
 gunicorn
 Flask==2.1.0
 xgboost
+jinja2
+scipy
+matplotlib
+Werkzeug
 pymongo[srv]

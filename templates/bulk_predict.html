@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Bulk Prediction</title>
+<link href='static\css\prediction_page.css' rel="stylesheet">
+<div class=page>
+  <h1>{{filename}}</h1>
+  {% for table in tables %}
+  <h2>{{titles[loop.index]}}</h2>                            
+  {{ table|safe }}
+  {% endfor %}
+  <a href="{{ url_for('bulk_predict_fwi')}}" id = 'btn1' class = 'button'>Predict Forest Weather Index</a>
+  <a href="{{ url_for('bulk_predict_forest_fire')}}" id = 'btn2' class="button">Predict Forest Fire Possibility</a>
+</div>

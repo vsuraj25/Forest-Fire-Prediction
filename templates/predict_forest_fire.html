@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <title>Predict Forest Fire Prediction</title>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href='static\css\prediction_page.css' rel="stylesheet">
+  </head>
+  <body>
+    <form action="{{ url_for('predict_forest_fire')}}"method="post">
+      <h1>Forest Fire Prediction</h1>
+      <div class="formcontainer">
+      <div class="container">
+        <label for="temp"><strong>Temperature</strong></label>
+        <input type="text" placeholder="Temperature in Celsius degrees" name="temp" required>
+        <label for="rh"><strong>Relative Humidity</strong></label>
+        <input type="text" placeholder="Relative Humidity in  %" name="rh" required>
+        <label for="ws"><strong>Wind Speed</strong></label>
+        <input type="text" placeholder="Wind speed in km/h" name="ws" required>
+        <label for="rain"><strong>Rain</strong></label>
+        <input type="text" placeholder="Rain in mm" name="rain" required>
+        <label for="ffmc"><strong>Fine Fuel Moisture Code</strong></label>
+        <input type="text" placeholder="Fine Fuel Moisture Code (FFMC)" name="ffmc" required>
+        <label for="dmc"><strong>Duff Moisture Code</strong></label>
+        <input type="text" placeholder="Duff Moisture Code (DMC)" name="dmc" required>
+        <label for="isi"><strong>Initial Spread Index</strong></label>
+        <input type="text" placeholder="Initial Spread Index (ISI)" name="isi" required>
+      </div>
+      <button type="submit"><strong>Predict</strong></button>
+      <label id="pff"><strong> {{prediction_text2}} </strong></label>
+    </form> 
+  </body>
+</html>

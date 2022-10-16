@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Predicted Data</title>
+<link href='static\css\prediction_page.css' rel="stylesheet">
+<div class=page>
+  <h1>{{target_prediction}}</h1>
+  <h3>Filename : {{filename}}</h3>
+  {% for table in tables %}
+  <h2>{{titles[loop.index]}}</h2>                            
+  {{ table|safe }}
+  {% endfor %}
+</div>

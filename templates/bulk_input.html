@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <title>Predict Forest Fire Prediction</title>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href='static\css\prediction_page.css' rel="stylesheet">
+  </head>
+  <body>
+    <form action="{{ url_for('upload')}}"method="POST" enctype="multipart/form-data">
+      <h1>Forest Fire Prediction</h1>
+      <div class="formcontainer">
+      <div class="container">
+        <label for="temp"><strong>Upload a csv file : </strong></label>
+        <input type="file" name="file"  accept=".csv" />  
+      </div>
+      <button type="submit"><strong>Upload and Show CSV</strong></button>
+    
+    </form> 
+  </body>
+</html>
