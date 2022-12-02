@@ -4,7 +4,7 @@
 
 <div align="center">
   <a href="https://github.com/aravind9722">
-    <img src="https://img.icons8.com/external-ddara-lineal-ddara/512/external-housing-real-estate-ddara-lineal-ddara.png" alt="Logo" width="80" height="80"/> 
+    <img src="https://img.icons8.com/external-dreamcreateicons-flat-dreamcreateicons/64/null/external-fire-weather-dreamcreateicons-flat-dreamcreateicons.png" alt="Logo" width="80" height="80"/> 
   </a>
 
     
@@ -29,9 +29,9 @@
 * This project aims to predict forest fire using best machine learning models. Regression and Classification both streams Supervised learning is portrayed in this project. The dataset used in this project is taken from UCI Machine Learning Repository - Algerian Forest Fire Dataset. Both Single input and Bulk input prediction can be exceuted.
 
 ## **Deployed app**
-[![App Screenshot](https://user-images.githubusercontent.com/55409076/204779198-56c97f74-05db-43fb-a9b8-db1af46184e9.PNG)](https://web-production-6e4e.up.railway.app/)
+[![App Screenshot](https://user-images.githubusercontent.com/55409076/205337765-74845c49-de33-4f9d-943c-c7d80c35ccf6.PNG)](https://web-production-ae1b.up.railway.app/)
 
-[LINK TO HEROKU APP](https://web-production-6e4e.up.railway.app/)
+[LINK TO HEROKU APP](https://web-production-ae1b.up.railway.app/)
 
 <!-- GETTING STARTED -->
 <div id="intro"></div>
