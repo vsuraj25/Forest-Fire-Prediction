@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Algerian Forest Fire Prediction</title>
-    <link href='static\css\home.css' rel="stylesheet">
-    </style>
-  </head>
-  <body>
-    <a href="{{ url_for('render_predict_fwi')}}" class="button">Predict Forest Weather Index</a>
-    <a href="{{ url_for('render_predict_forest_fire')}}" class="button">Predict Forest FIre Possibility</a>
-    <a href="{{ url_for('render_bulk_predict')}}" class="button">Bulk Prediction - CSV File</a>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\css\style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('render_predict_fwi')}}" class="button" id="btn1">Predict Forest Weather Index</a>
+        <a href="{{ url_for('render_predict_forest_fire')}}" class="button" id="btn2">Predict Forest FIre Possibility</a>
+        <a href="{{ url_for('render_bulk_predict')}}" class="button" id="btn3">Bulk Prediction - CSV File</a>
+    </nav>
+    <div class="container">
+        <h1>Forest Fire Prediction</h1>
+        <p>This project aims to predict forest fire using best machine learning models. 
+          Regression and Classification both streams Supervised learning is portrayed in this project. 
+          The dataset used in this project is taken from UCI Machine Learning Repository - Algerian Forest Fire Dataset. 
+          Both Single input and Bulk input prediction can be exceuted.</p>
+    </div>
+</body>
 </html>

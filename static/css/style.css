@@ -1,0 +1,59 @@
+body{   
+    
+    background-image: url("images/forest-fire_bg.jpg");
+    }
+nav{
+    display: grid; 
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 300px;
+}
+a{
+    text-decoration:none;
+}
+#btn1,#btn2,#btn3{
+    display: grid;
+    background-color: transparent;
+    border: 3px solid rgb(0, 0, 0);
+    color: beige;
+    width: 550px;
+    cursor: pointer;
+    transition: all .5s ease;
+    border-radius: 8%;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    margin-bottom:30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+#btn1:hover, #btn2:hover, #btn3:hover, .container:hover {
+    background-color: rgba(73, 66, 66, 0.753);
+  }
+.container{
+    background-color: transparent ;
+    color: beige;
+    transition: all .5s ease;
+    border: 3px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 140px;
+    height: 450px;
+    width: 500px;
+    font-size: larger;
+    padding: 20px 40px 30px;
+    margin-left: 700px;
+}
+span.ws {
+    float: right;
+    padding-top: 0;
+    padding-right: 15px;
+    }
+@media screen and (max-width: 300px) {
+    span.ws {
+    display: block;
+    float: none;
+    }
+  }
